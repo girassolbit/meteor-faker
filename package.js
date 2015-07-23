@@ -1,5 +1,5 @@
 Package.describe({
-  name: 'girassolbit:meteor-faker',
+  name: 'girassolbit:faker',
   version: '0.0.1',
   summary: 'Wraps faker.js to Meteor',
   git: 'https://github.com/girassolbit/meteor-faker',
