@@ -1,5 +1,7 @@
-// Write your tests here!
-// Here is an example.
-Tinytest.add('example', function (test) {
-  test.equal(true, true);
-});
+if(Meteor.isClient){
+
+Tinytest.add('Faker client - faker object should be available', function(test){
+  test.isTrue(!!window.faker);
+});	
+
+}
