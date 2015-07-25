@@ -15,6 +15,7 @@ Package.onUse(function(api) {
   api.addFiles('meteor-faker.js', ['server']);
   
   api.addFiles('.npm/package/node_modules/faker/build/build/faker.js', ['client']);
+  api.addFiles('faker-client.js', ['client']);
 
   api.export('faker', ['server']);
 });
