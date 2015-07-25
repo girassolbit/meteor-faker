@@ -1,5 +1,5 @@
 # faker.js wraped for Meteor 
-[![Build Status](https://travis-ci.org/girassolbit/meteor-fakefill.svg?branch=master)](https://travis-ci.org/girassolbit/meteor-fakefill)
+[![Build Status](https://travis-ci.org/girassolbit/meteor-faker.svg?branch=master)](https://travis-ci.org/girassolbit/meteor-faker)
 
 You can use `faker` both client and server side
 
