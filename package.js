@@ -1,6 +1,6 @@
 Package.describe({
   name: 'gbit:faker',
-  version: '0.0.1',
+  version: '0.0.3',
   summary: 'Wraps faker.js to Meteor',
   git: 'https://github.com/girassolbit/meteor-faker',
   documentation: 'README.md'

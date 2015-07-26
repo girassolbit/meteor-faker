@@ -15,3 +15,7 @@ faker.meteor = {
 		}
 	}
 }
+
+Blaze.registerHelper('faker', function(){
+	return faker;
+});

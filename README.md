@@ -15,3 +15,11 @@ Returns a simple user
 var user = faker.meteor.user();
 => { username, emails: [{ adress: '...' }], profile: { name: '...' } }
 ```
+
+### Blaze helper
+You can invoke faker inside a view
+```html
+<template name="users">
+	Name: {{faker.name.firstName}}
+</template>
+```
