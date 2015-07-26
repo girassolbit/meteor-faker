@@ -11,20 +11,20 @@ Npm.depends({
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('1.1.0.2');
-  api.addFiles('faker.js', ['server']);
+  api.versionsFrom('METEOR@1.1.0.2');
+  api.addFiles('lib/faker.js', 'server');
   
-  api.addFiles('.npm/package/node_modules/faker/build/build/faker.js', ['client']);
-  api.addFiles('faker-client.js', ['client']);
+  api.addFiles('.npm/package/node_modules/faker/build/build/faker.js', 'client');
+  api.addFiles('lib/faker-client.js', 'client');
 
-  api.export('faker', ['server']);
+  api.export('faker', 'server');
 });
 
 Package.onTest(function(api) {
   api.use('tinytest');
   api.use('gbit:faker');
 
-  api.addFiles('.npm/package/node_modules/faker/build/build/faker.js', ['client']);
+  api.addFiles('.npm/package/node_modules/faker/build/build/faker.js', 'client');
   
-  api.addFiles('faker-tests.js');
+  api.addFiles('tests/faker-tests.js');
 });
