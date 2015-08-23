@@ -1,6 +1,6 @@
 Package.describe({
   name: 'gbit:faker',
-  version: '0.0.3',
+  version: '0.0.4',
   summary: 'Wraps faker.js to Meteor',
   git: 'https://github.com/girassolbit/meteor-faker',
   documentation: 'README.md'
@@ -12,8 +12,10 @@ Npm.depends({
 
 Package.onUse(function(api) {
   api.versionsFrom('METEOR@1.1.0.2');
+  api.use("blaze");
+
   api.addFiles('lib/faker.js', 'server');
-  
+
   api.addFiles('.npm/package/node_modules/faker/build/build/faker.js', 'client');
   api.addFiles('lib/faker-client.js', 'client');
 
@@ -25,6 +27,6 @@ Package.onTest(function(api) {
   api.use('gbit:faker');
 
   api.addFiles('.npm/package/node_modules/faker/build/build/faker.js', 'client');
-  
+
   api.addFiles('tests/faker-tests.js');
 });
